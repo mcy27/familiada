@@ -60,10 +60,13 @@ export class FinalViewComponent implements OnInit {
 
   setTimer(seconds: number) {
     this.timeLeft = seconds;
+    if(this.interval) {
+      clearInterval(this.interval);
+    }
     this.interval = setInterval(() => {
       this.timeLeft--
-      if(this.timeLeft === 0 && this.interval) {
-        this.srcSound = '../../assets/sounds/czas-final-familiada.mp3';
+      if(this.timeLeft < 0 && this.interval) {
+        this.srcSound = '../../familiada/assets/sounds/czas-final-familiada.mp3';
         setTimeout(() => {
           this.srcSound = '';
         }, 1000)
