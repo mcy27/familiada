@@ -46,7 +46,7 @@ export class FinalManagementComponent implements OnInit {
     this.allAnswers[index] = answer;
     this.getPoints();
     if(answer.active) {
-      this.srcSound = '../../assets/sounds/dobra-odpowiedz-familiada.mp3';
+      this.srcSound = '../../familiada/assets/sounds/dobra-odpowiedz-familiada.mp3';
       setTimeout(() => {
         this.srcSound = '';
       }, 1000)
@@ -73,21 +73,21 @@ export class FinalManagementComponent implements OnInit {
   }
 
   setIntro() {
-    this.srcSound = '../../assets/sounds/intro-familiada.mp3';
+    this.srcSound = '../../familiada/assets/sounds/intro-familiada.mp3';
     setTimeout(() => {
       this.srcSound = '';
     }, 10000)
   }
 
   setRepeat() {
-    this.srcSound = '../../assets/sounds/powtorzenie-w-finale-familiada.mp3';
+    this.srcSound = '../../familiada/assets/sounds/powtorzenie-w-finale-familiada.mp3';
     setTimeout(() => {
       this.srcSound = '';
     }, 2000)
   }
 
   setEndTime() {
-    this.srcSound = '../../assets/sounds/czas-final-familiada.mp3';
+    this.srcSound = '../../familiada/assets/sounds/czas-final-familiada.mp3';
     setTimeout(() => {
       this.srcSound = '';
     }, 2000)
