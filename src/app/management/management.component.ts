@@ -52,7 +52,7 @@ export class ManagementComponent implements OnInit {
       team.lossBig = setLoss;
     }
     if (setLoss) {
-      this.srcSound = '/../../assets/sounds/bledna-familiada.mp3';
+      this.srcSound = '/../../familiada/assets/sounds/bledna-familiada.mp3';
       setTimeout(() => {
         this.srcSound = '';
       }, 1000)
@@ -71,7 +71,7 @@ export class ManagementComponent implements OnInit {
   changeActiveQuestion(ans: IAnswer) {
     ans.active = !ans.active;
     if(ans.active) {
-        this.srcSound = '/../../assets/sounds/dobra-odpowiedz-familiada.mp3';
+        this.srcSound = '/../../familiada/assets/sounds/dobra-odpowiedz-familiada.mp3';
         setTimeout(() => {
           this.srcSound = '';
         }, 1000)
@@ -106,7 +106,7 @@ export class ManagementComponent implements OnInit {
       this.actualQuestion = null;
     }
     this.questionScore = 0;
-      this.srcSound = '/../../assets/sounds/przed-i-po-rundzie-familiada.mp3';
+      this.srcSound = './../../familiada/assets/sounds/przed-i-po-rundzie-familiada.mp3';
       setTimeout(() => {
         this.srcSound = '';
       }, 5000)
