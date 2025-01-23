@@ -1,0 +1,71 @@
+<p>FINAL MANAGEMENT WORK!</p>
+<div class="container">
+  <div class="team-0">
+    <div>
+      <input [(ngModel)]="answer1Player0.answer" type="text">
+      <input [(ngModel)]="answer1Player0.points" type="number">
+      <input [(ngModel)]="answer1Player0.active" (click)="setActive(answer1Player0, 0)" type="checkbox">
+    </div>
+    <div>
+      <input [(ngModel)]="answer2Player0.answer" type="text">
+      <input [(ngModel)]="answer2Player0.points" type="number">
+      <input [(ngModel)]="answer2Player0.active" (click)="setActive(answer2Player0,1)" type="checkbox">
+    </div>
+    <div>
+      <input [(ngModel)]="answer3Player0.answer" type="text">
+      <input [(ngModel)]="answer3Player0.points" type="number">
+      <input [(ngModel)]="answer3Player0.active" (click)="setActive(answer3Player0,2)" type="checkbox">
+    </div>
+    <div>
+      <input [(ngModel)]="answer4Player0.answer" type="text">
+      <input [(ngModel)]="answer4Player0.points" type="number">
+      <input [(ngModel)]="answer4Player0.active" (click)="setActive(answer4Player0,3)" type="checkbox">
+    </div>
+    <div>
+      <input [(ngModel)]="answer5Player0.answer" type="text">
+      <input [(ngModel)]="answer5Player0.points" type="number">
+      <input [(ngModel)]="answer5Player0.active" (click)="setActive(answer5Player0,4)" type="checkbox">
+    </div>
+  </div>
+  <div class="team-1">
+    <div>
+      <input [(ngModel)]="answer1Player1.answer" type="text">
+      <input [(ngModel)]="answer1Player1.points" type="number">
+      <input [(ngModel)]="answer1Player1.active" (click)="setActive(answer1Player1, 5)" type="checkbox">
+    </div>
+    <div>
+      <input [(ngModel)]="answer2Player1.answer" type="text">
+      <input [(ngModel)]="answer2Player1.points" type="number">
+      <input [(ngModel)]="answer2Player1.active" (click)="setActive(answer2Player1, 6)" type="checkbox">
+    </div>
+    <div>
+      <input [(ngModel)]="answer3Player1.answer" type="text">
+      <input [(ngModel)]="answer3Player1.points" type="number">
+      <input [(ngModel)]="answer3Player1.active" (click)="setActive(answer3Player1, 7)" type="checkbox">
+    </div>
+    <div>
+      <input [(ngModel)]="answer4Player1.answer" type="text">
+      <input [(ngModel)]="answer4Player1.points" type="number">
+      <input [(ngModel)]="answer4Player1.active" (click)="setActive(answer4Player1, 8)" type="checkbox">
+    </div>
+    <div>
+      <input [(ngModel)]="answer5Player1.answer" type="text">
+      <input [(ngModel)]="answer5Player1.points" type="number">
+      <input [(ngModel)]="answer5Player1.active" (click)="setActive(answer5Player1, 9)" type="checkbox">
+    </div>
+  </div>
+  POINTS: {{points}}
+</div>
+<audio [src]="srcSound" class="audio" autoplay>
+</audio>
+
+<input [(ngModel)]="timeToEnd" type="number">
+<input (click)="setToStorageTimer($event)" type="checkbox">
+
+
+
+<button class="font-familiada" (click)="setIntro()"><span>INTRO</span></button>
+<button class="font-familiada" (click)="setRepeat()">POWTÓRZENIE FINAŁ</button>
+<button class="font-familiada" (click)="setEndTime()">KONIEC CZASU FINAŁ</button>
+
+

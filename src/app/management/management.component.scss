@@ -1,0 +1,78 @@
+.board-layout {
+  display: flex;
+  background: black;
+  width: 100vw;
+  height: 100vh;
+}
+
+.team-one-column {
+  text-align: center;
+  height: 100vh;
+  width: 15vw;
+  font-size: 10rem;
+  cursor: pointer;
+}
+
+.team-two-column {
+  text-align: center;
+  height: 100vh;
+  width: 15vw;
+  font-size: 10rem;
+  cursor: pointer;
+
+}
+
+.question-answer {
+  display: flex;
+  height: 100vh;
+  width: 70vw;
+  flex-direction: column;
+
+}
+.answer {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 3rem;
+}
+
+.loss {
+  height: 30vh;
+  width: 15vw;
+}
+
+.score {
+  margin: 1rem;
+  font-size: 5rem;
+}
+
+.team-two-column>.score {
+  text-align: right;
+}
+
+.team-one-column>.score {
+  text-align: left;
+}
+
+.opacity {
+  opacity: 10%;
+}
+
+.question-score {
+  height: 10vh;
+  text-align: center;
+  font-size: 3rem;
+  align-self: flex-end;
+  margin-bottom: 5vh;
+};
+
+.familiada-text {
+  display: flex;
+  font-size: 12rem;
+  flex-grow: 1;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,51 @@
+.board-layout {
+  display: flex;
+  background: black;
+  width: 100vw;
+  height: 90vh;
+  padding-top: 10vh;
+}
+.player0-answer {
+  width: 50vw;
+  height: 70vh;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.player1-answer {
+  width: 50vw;
+  height: 70vh;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.answer {
+  display: flex;
+  align-self: flex-end;
+  margin: 2.5rem;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.answer1 {
+  display: flex;
+  margin: 2.5rem;
+  width: 80%;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.points {
+  position: fixed;
+  bottom: 10vh;
+  right: 20vw;
+  font-size: 5rem;
+}
+
+.timer {
+    position: fixed;
+    bottom: 10vh;
+    left: 20vw;
+    font-size: 5rem;
+}

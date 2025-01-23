@@ -1,0 +1,51 @@
+<div class="board-layout">
+  <div class="team-one-column">
+    <div [ngClass]="teamZeroResult.lossOne ? 'loss' : 'loss opacity'"
+         (click)="setLosses(1, !teamZeroResult.lossOne, 0)">\/<br>
+      /\
+    </div>
+    <div [ngClass]="teamZeroResult.lossTwo ? 'loss' : 'loss opacity'"
+         (click)="setLosses(2, !teamZeroResult.lossTwo, 0)">\/<br>
+      /\
+    </div>
+    <div [ngClass]="teamZeroResult.lossThree ? 'loss' : 'loss opacity'"
+         (click)="setLosses(3, !teamZeroResult.lossThree, 0)">\/<br>
+      /\
+    </div>
+    <div class="score" (click)="addPointsNextQuestion(0)">{{teamZeroResult.score}}</div>
+  </div>
+  <div *ngIf="actualQuestion" class="question-answer">
+    <div class="answer" *ngFor="let answer of actualQuestion.answer; index as i">
+      <div>{{i + 1}}. </div>
+      <div (click)="changeActiveQuestion(answer)"
+            *ngIf="answer.active">{{answer.answer.toLocaleUpperCase()}} {{answer.points}} </div>
+      <div (click)="changeActiveQuestion(answer)" *ngIf="!answer.active">.................................................. </div>
+    </div>
+    <div class="question-score">SUMA: {{questionScore}}</div>
+  </div>
+  <div *ngIf="!actualQuestion" class="question-answer">
+    <span class="familiada-text">FAMILIADA</span>
+  </div>
+  <div class="team-two-column">
+    <div [ngClass]="teamOneResult.lossOne ? 'loss' : 'loss opacity'" (click)="setLosses(1, !teamOneResult.lossOne, 1)">
+      \/<br>
+      /\
+    </div>
+    <div [ngClass]="teamOneResult.lossTwo ? 'loss' : 'loss opacity'" (click)="setLosses(2, !teamOneResult.lossTwo, 1)">
+      \/<br>
+      /\
+    </div>
+    <div [ngClass]="teamOneResult.lossThree ? 'loss' : 'loss opacity'"
+         (click)="setLosses(3, !teamOneResult.lossThree, 1)">\/<br>
+      /\
+    </div>
+    <div class="score" (click)="addPointsNextQuestion(1)">{{teamOneResult.score}}</div>
+  </div>
+</div>
+
+<audio [src]="srcSound" class="audio" autoplay>
+</audio>
+
+<!--comment-->
+<div *ngIf="!fullScreen" (click)="openFullScreen()">OPEN</div>
+

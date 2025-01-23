@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'familiada-regular';
+  src: url('./assets/fonts/familiada-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;;
+}
+
+@font-face {
+  font-family: 'misty-style';
+  src: url('./assets/fonts/MistyStyle.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;;
+}
+@font-face {
+  font-family: 'familiada';
+  src: url('./assets/fonts/familiada-nowa.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;;
+}
+
+
+body {
+  font-family: 'familiada';
+  color: #BCC073;
+  margin: 0 !important;
+}
+
+button {
+  background: black;
+  margin: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.font-familiada {
+  font-family: 'familiada';
+  color: #BCC073;
+  background: black;
+}

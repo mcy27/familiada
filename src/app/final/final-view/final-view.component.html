@@ -1,0 +1,116 @@
+<div class="board-layout">
+  <div class="player0-answer">
+    <div class="answer">
+      <div class="player0-answer_answer">
+        <span *ngIf="!allAnswers[0].active">...........................</span>
+        <span *ngIf="allAnswers[0].active">{{allAnswers[0].answer.toLocaleUpperCase()}}</span>
+      </div>
+      <div class="player0-answer_points">
+        <span *ngIf="!allAnswers[0].active">aa</span>
+        <span *ngIf="allAnswers[0].active">{{allAnswers[0].points}}</span>
+      </div>
+    </div>
+    <div class="answer">
+      <div class="player0-answer_answer">
+        <span *ngIf="!allAnswers[1].active">...........................</span>
+        <span *ngIf="allAnswers[1].active">{{allAnswers[1].answer.toLocaleUpperCase()}}</span>
+      </div>
+      <div class="player0-answer_points">
+        <span *ngIf="!allAnswers[1].active">aa</span>
+        <span *ngIf="allAnswers[1].active">{{allAnswers[1].points}}</span>
+      </div>
+    </div>
+    <div class="answer">
+      <div class="player0-answer_answer">
+        <span *ngIf="!allAnswers[2].active">...........................</span>
+        <span *ngIf="allAnswers[2].active">{{allAnswers[2].answer.toLocaleUpperCase()}}</span>
+      </div>
+      <div class="player0-answer_points">
+        <span *ngIf="!allAnswers[2].active">aa</span>
+        <span *ngIf="allAnswers[2].active">{{allAnswers[2].points}}</span>
+      </div>
+    </div>
+    <div class="answer">
+      <div class="player0-answer_answer">
+        <span *ngIf="!allAnswers[3].active">...........................</span>
+        <span *ngIf="allAnswers[3].active">{{allAnswers[3].answer.toLocaleUpperCase()}}</span>
+      </div>
+      <div class="player0-answer_points">
+        <span *ngIf="!allAnswers[3].active">aa</span>
+        <span *ngIf="allAnswers[3].active">{{allAnswers[3].points}}</span>
+      </div>
+    </div>
+    <div class="answer">
+      <div class="player0-answer_answer">
+        <span *ngIf="!allAnswers[4].active">...........................</span>
+        <span *ngIf="allAnswers[4].active">{{allAnswers[4].answer.toLocaleUpperCase()}}</span>
+      </div>
+      <div class="player0-answer_points">
+        <span *ngIf="!allAnswers[4].active">aa</span>
+        <span *ngIf="allAnswers[4].active">{{allAnswers[4].points}}</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="player1-answer">
+    <div class="answer1">
+      <div class="player1-answer_answer">
+        <span *ngIf="!allAnswers[5].active">...........................</span>
+        <span *ngIf="allAnswers[5].active">{{allAnswers[5].answer.toLocaleUpperCase()}}</span>
+      </div>
+      <div class="player1-answer_points">
+        <span *ngIf="!allAnswers[5].active">aa</span>
+        <span *ngIf="allAnswers[5].active">{{allAnswers[5].points}}</span>
+      </div>
+    </div>
+    <div class="answer1">
+      <div class="player1-answer_answer">
+        <span *ngIf="!allAnswers[6].active">...........................</span>
+        <span *ngIf="allAnswers[6].active">{{allAnswers[6].answer.toLocaleUpperCase()}}</span>
+      </div>
+      <div class="player1-answer_points">
+        <span *ngIf="!allAnswers[6].active">aa</span>
+        <span *ngIf="allAnswers[6].active">{{allAnswers[6].points}}</span>
+      </div>
+    </div>
+    <div class="answer1">
+      <div class="player1-answer_answer">
+        <span *ngIf="!allAnswers[7].active">...........................</span>
+        <span *ngIf="allAnswers[7].active">{{allAnswers[7].answer.toLocaleUpperCase()}}</span>
+      </div>
+      <div class="player1-answer_points">
+        <span *ngIf="!allAnswers[7].active">aa</span>
+        <span *ngIf="allAnswers[7].active">{{allAnswers[7].points}}</span>
+      </div>
+    </div>
+    <div class="answer1">
+      <div class="player1-answer_answer">
+        <span *ngIf="!allAnswers[8].active">...........................</span>
+        <span *ngIf="allAnswers[8].active">{{allAnswers[8].answer.toLocaleUpperCase()}}</span>
+      </div>
+      <div class="player1-answer_points">
+        <span *ngIf="!allAnswers[8].active">aa</span>
+        <span *ngIf="allAnswers[8].active">{{allAnswers[8].points}}</span>
+      </div>
+    </div>
+    <div class="answer1">
+      <div class="player1-answer_answer">
+        <span *ngIf="!allAnswers[9].active">...........................</span>
+        <span *ngIf="allAnswers[9].active">{{allAnswers[9].answer.toLocaleUpperCase()}}</span>
+      </div>
+      <div class="player1-answer_points">
+        <span *ngIf="!allAnswers[9].active">aa</span>
+        <span *ngIf="allAnswers[9].active">{{allAnswers[9].points}}</span>
+      </div>
+    </div>
+  </div>
+  <div class="points">SUMA {{points}}</div>
+  <div class="timer">{{timeLeft}}</div>
+
+</div>
+<audio [src]="srcSound" class="audio" autoplay>
+</audio>
+<!--comment-->
+<div *ngIf="!fullScreen" (click)="openFullScreen()">OPEN</div>
+
+

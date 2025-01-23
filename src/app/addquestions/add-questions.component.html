@@ -1,0 +1,28 @@
+<div>
+
+  <div>DODAJ ZESTAW</div>
+  <div class="container" *ngFor="let qa of QuestionAnswers">
+    <div class="container">
+      <span>Pytanie</span>
+      <input type="text" [ngModel]="qa.question" (ngModelChange)="qa.question= $event">
+    </div>
+    <div class="container">
+      <span>Odpowiedzi</span>
+      <div *ngFor="let a of qa.answer">
+        <input type="text" [ngModel]="a.answer" (ngModelChange)="a.answer = $event">
+        <input type="number" [ngModel]="a.points" (ngModelChange)="a.points = $event">
+      </div>
+    </div>
+    Mnożnik
+    <input type="number" [ngModel]="qa.multiplier" (ngModelChange)="qa.multiplier = $event">
+    <br>
+    <br>
+    <br>
+  </div>
+
+
+</div>
+
+<div>
+  <button (click)="saveToLocalStorage()">DODAJ ZESTAW</button>
+</div>

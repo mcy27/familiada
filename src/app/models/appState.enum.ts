@@ -1,0 +1,8 @@
+﻿export enum AppState {
+  MENU,
+  MANAGEMENT,
+  VIEW,
+  FINAL,
+  FINAL_MANAGEMENT,
+  ADD_QUESTIONS
+}
